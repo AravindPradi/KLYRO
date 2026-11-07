@@ -287,3 +287,60 @@
     transition: none;
   }
 }
+
+/* HOME HERO — automation entry point */
+
+.home-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2.5rem;
+}
+
+.home-action-primary,
+.home-action-secondary {
+  font: inherit;
+  font-size: 0.84rem;
+  padding: 1rem 1.5rem;
+  border: 1px solid var(--accent-color);
+  transition: background var(--transition-fast), color var(--transition-fast);
+}
+
+.home-action-primary {
+  background: var(--accent-color);
+  color: var(--color-ink);
+  display: inline-flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.home-action-primary:hover {
+  background: transparent;
+  color: var(--text-primary);
+}
+
+.home-action-secondary {
+  background: transparent;
+  color: var(--text-primary);
+}
+
+.home-action-secondary:hover {
+  background: var(--accent-color);
+  color: var(--color-ink);
+}
+
+.home-note {
+  margin-top: 1.6rem !important;
+  max-width: 540px;
+  color: var(--text-secondary) !important;
+  font-size: 0.85rem !important;
+  line-height: 1.8;
+}
+
+@media (max-width: 760px) {
+  .home-actions {
+    flex-direction: column;
+    align-items: stretch;
+    max-width: 320px;
+  }
+}

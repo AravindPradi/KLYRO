@@ -22,6 +22,7 @@ export default function Header({
     { label: "Services", section: "services" },
     { label: "Process", section: "process" },
     { label: "About", section: "about" },
+    { label: "AI Brief", section: "brief" },
   ];
 
   return (

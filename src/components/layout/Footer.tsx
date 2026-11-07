@@ -1,4 +1,5 @@
 
+import { Link } from "react-router-dom";
 import Container from "../ui/Container";
 import type { SectionName } from "../../hooks/useSectionNavigation";
 import "./Footer.css";
@@ -35,6 +36,7 @@ export default function Footer({ onNavigate }: FooterProps) {
             <button onClick={() => onNavigate("services")}>Services</button>
             <button onClick={() => onNavigate("process")}>Process</button>
             <button onClick={() => onNavigate("about")}>About</button>
+            <button onClick={() => onNavigate("brief")}>AI Brief Studio</button>
           </div>
 
           <div className="footer-column">
@@ -43,6 +45,7 @@ export default function Footer({ onNavigate }: FooterProps) {
               Start a Project
             </button>
             <a href="mailto:technologiiaa@proton.me">Email KLYRO</a>
+            <Link to="/studio">Studio Login</Link>
           </div>
         </div>
 

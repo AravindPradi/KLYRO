@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# KLYRO Studio OS — local data, secrets and generated reports
+data/
+reports/
+.env
+.env.local
+*.tmp

@@ -1,0 +1,372 @@
+.pp-page {
+  min-height: 100vh;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.pp-header {
+  border-bottom: 1px solid var(--border-color);
+  padding: 1.4rem var(--page-gutter);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.pp-brand {
+  font-family: var(--font-display);
+  font-size: 1.7rem;
+  font-weight: 600;
+  letter-spacing: -0.06em;
+}
+
+.pp-brand span {
+  color: var(--accent-color);
+}
+
+.pp-header-actions {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.pp-theme {
+  background: transparent;
+  border: 0;
+  color: var(--text-secondary);
+  font: inherit;
+  font-size: 0.8rem;
+}
+
+.pp-header-link {
+  border-bottom: 1px solid var(--accent-color);
+  padding-bottom: 0.25rem;
+}
+
+.pp-shell {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: clamp(3rem, 7vw, 6rem) var(--page-gutter) 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.pp-eyebrow {
+  color: var(--accent-color);
+  font-size: 0.68rem;
+  letter-spacing: 0.16em;
+  font-weight: 600;
+  margin: 0 0 1rem;
+}
+
+.pp-head h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.6rem, 6vw, 5rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.pp-lead {
+  color: var(--text-secondary);
+  line-height: 1.85;
+  margin-top: 1.5rem;
+  max-width: 760px;
+}
+
+.pp-meta {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  border-block: 1px solid var(--border-color);
+  padding: 1.4rem 0;
+  margin-top: 2.5rem;
+}
+
+.pp-meta div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.pp-meta span {
+  font-size: 0.64rem;
+  letter-spacing: 0.12em;
+  color: var(--text-secondary);
+}
+
+.pp-meta strong {
+  font-size: 0.86rem;
+  font-weight: 600;
+}
+
+.pp-status {
+  margin-top: 1.2rem;
+  display: inline-block;
+  width: fit-content;
+  border: 1px solid var(--border-color);
+  padding: 0.5rem 0.9rem;
+  font-size: 0.76rem;
+}
+
+.pp-status-approved {
+  border-color: #5f7a5a;
+  color: #5f7a5a;
+}
+
+.pp-status-declined {
+  color: var(--text-secondary);
+}
+
+.pp-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+.pp-card h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  margin-bottom: 1.2rem;
+}
+
+.pp-investment {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(1.5rem, 5vw, 4rem);
+  border-color: var(--accent-color);
+}
+
+.pp-price {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: -0.04em;
+}
+
+.pp-muted {
+  color: var(--text-secondary);
+  font-size: 0.82rem;
+  line-height: 1.8;
+  margin-top: 0.8rem;
+}
+
+.pp-objectives ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  font-size: 0.85rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+}
+
+.pp-table-wrap {
+  overflow-x: auto;
+}
+
+.pp-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+  text-align: left;
+}
+
+.pp-table th {
+  font-size: 0.66rem;
+  letter-spacing: 0.1em;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border-color);
+  padding: 0.7rem 0.5rem;
+}
+
+.pp-table td {
+  border-bottom: 1px solid var(--border-color);
+  padding: 0.85rem 0.5rem;
+  color: var(--text-secondary);
+  vertical-align: top;
+  line-height: 1.6;
+}
+
+.pp-table td strong {
+  color: var(--text-primary);
+}
+
+.pp-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.pp-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.pp-list li {
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-size: 0.84rem;
+}
+
+.pp-list li span {
+  color: var(--accent-color);
+  font-size: 0.72rem;
+}
+
+.pp-list li p {
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+}
+
+.pp-bullets {
+  padding-left: 1.1rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  font-size: 0.82rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+.pp-decision {
+  border-color: var(--accent-color);
+}
+
+.pp-decision > p {
+  color: var(--text-secondary);
+  line-height: 1.85;
+  font-size: 0.88rem;
+  max-width: 700px;
+}
+
+.pp-decision label {
+  display: block;
+  margin-top: 1.5rem;
+  font-size: 0.78rem;
+}
+
+.pp-page textarea {
+  width: 100%;
+  margin-top: 0.6rem;
+  padding: 0.9rem;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  font: inherit;
+  font-size: 0.84rem;
+  resize: vertical;
+}
+
+.pp-decision-actions {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin-top: 1.4rem;
+}
+
+.pp-decision-actions button {
+  font: inherit;
+  font-size: 0.82rem;
+  padding: 0.9rem 1.3rem;
+  border: 1px solid var(--accent-color);
+}
+
+.pp-approve {
+  background: var(--accent-color);
+  color: var(--color-ink);
+}
+
+.pp-approve:hover:not(:disabled) {
+  background: transparent;
+  color: var(--text-primary);
+}
+
+.pp-approve:disabled {
+  opacity: 0.55;
+}
+
+.pp-decline,
+.pp-copy {
+  background: transparent;
+  color: var(--text-primary);
+  border-color: var(--border-color) !important;
+}
+
+.pp-decision blockquote {
+  margin: 1.2rem 0 0;
+  border-left: 2px solid var(--accent-color);
+  padding-left: 1rem;
+  color: var(--text-secondary);
+  font-size: 0.86rem;
+}
+
+.pp-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--border-color);
+  padding-top: 1.5rem;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.pp-footer a {
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.pp-loading,
+.pp-error {
+  padding: 4rem 0;
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+.pp-error h1 {
+  font-family: var(--font-display);
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.pp-error a {
+  color: var(--accent-color);
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.pp-inline-error {
+  color: #b4554d;
+  font-size: 0.78rem;
+  margin-top: 0.8rem;
+}
+
+@media (max-width: 720px) {
+  .pp-meta,
+  .pp-investment,
+  .pp-grid-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .pp-decision-actions button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .pp-meta,
+  .pp-investment,
+  .pp-grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
